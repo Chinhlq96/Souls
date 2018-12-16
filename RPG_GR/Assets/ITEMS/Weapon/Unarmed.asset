@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c6a3f07e020e44fbe8bb7bc1991231, type: 3}
+  m_Name: Unarmed
+  m_EditorClassIdentifier: 
+  ui_name: 
+  icon: {fileID: 0}
+  idle_anim: empty
+  th_idle_anim: Empty Both
+  modelPrefab: {fileID: 1878457707828520, guid: 2e55c6eea5cd2d8418e1de6aa37cbcec,
+    type: 2}
+  rb_Action: {fileID: 11400000, guid: 697cea5c2297faa419d18e21437714ab, type: 2}
+  rt_Action: {fileID: 11400000, guid: e52865f569fa57c4a9546095e331ec0a, type: 2}
+  lb_Action: {fileID: 11400000, guid: 697cea5c2297faa419d18e21437714ab, type: 2}
+  lt_Action: {fileID: 11400000, guid: e52865f569fa57c4a9546095e331ec0a, type: 2}
+  th_rb_Action: {fileID: 11400000, guid: 697cea5c2297faa419d18e21437714ab, type: 2}
+  th_rt_Action: {fileID: 11400000, guid: e52865f569fa57c4a9546095e331ec0a, type: 2}
+  th_lb_Action: {fileID: 11400000, guid: 697cea5c2297faa419d18e21437714ab, type: 2}
+  th_lt_Action: {fileID: 11400000, guid: e52865f569fa57c4a9546095e331ec0a, type: 2}
+  parryTimer: 0.2

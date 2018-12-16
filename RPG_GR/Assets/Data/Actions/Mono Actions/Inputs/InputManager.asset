@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c1373c1d2aa5644780a7da7655e55bc, type: 3}
+  m_Name: InputManager
+  m_EditorClassIdentifier: 
+  horizontal: {fileID: 11400000, guid: 38a040c4e8f020d4894826d3b569ac4d, type: 2}
+  vertical: {fileID: 11400000, guid: a44c9abb29bab11489ace9b3b7ba908d, type: 2}
+  mouseX: {fileID: 11400000, guid: 2bcb873fff4b8634bbdef3a7db899bb0, type: 2}
+  mouseY: {fileID: 11400000, guid: 4e96294fd2cd22a4b95eb12978ca8fab, type: 2}
+  RB: {fileID: 11400000, guid: ecd5cf3b93c96014b8490a215acd0ee4, type: 2}
+  RT: {fileID: 11400000, guid: 393dfa198d9daa94aa0455334ac1570b, type: 2}
+  LB: {fileID: 11400000, guid: b1733d9c9ec16d541bb8004f2f752e6c, type: 2}
+  LT: {fileID: 11400000, guid: 8731924b89b0bfd42a3aa9c3bcf7f8b2, type: 2}
+  Lockon: {fileID: 11400000, guid: 35b934cb8c839ab40a33689b45aa6f50, type: 2}
+  y_Input: {fileID: 11400000, guid: 1c9430bb42ba6e74aa930245633642ed, type: 2}
+  b_Input: {fileID: 11400000, guid: 53b9bfacfd8b4574e86c3fa6fa8c06f4, type: 2}
+  moveAmount: 0
+  rotateDirection: {x: 0, y: 0, z: 0}
+  cameraTransform: {fileID: 11400000, guid: 8662383782278be418a0f7a75267643a, type: 2}
+  playerStates: {fileID: 11400000, guid: e12ac7c6154aed945b5ecc80d9d6fc66, type: 2}

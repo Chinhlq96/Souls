@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead8119bb59d1734b89b23dd9345f987, type: 3}
+  m_Name: Is Locked On Switch
+  m_EditorClassIdentifier: 
+  boolVariable: {fileID: 11400000, guid: deb0d0ad0626ba742a4b8491d26d8cd8, type: 2}
+  stateActionTrue: {fileID: 11400000, guid: ce7a83641d20e2748bf28293169b7978, type: 2}
+  stateActionFalse: {fileID: 11400000, guid: 3b510d11cad5740499ccb7c9d49e14d0, type: 2}

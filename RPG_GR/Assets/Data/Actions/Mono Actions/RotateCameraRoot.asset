@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb2569e8050e7f428ab722560c80462, type: 3}
+  m_Name: RotateCameraRoot
+  m_EditorClassIdentifier: 
+  targetInput: {fileID: 11400000, guid: 2bcb873fff4b8634bbdef3a7db899bb0, type: 2}
+  targetTransform: {fileID: 11400000, guid: 8662383782278be418a0f7a75267643a, type: 2}
+  angle: {fileID: 11400000, guid: 10ca53fc65e214a48bb02be408a1e29b, type: 2}
+  speed: 200
+  negative: 0
+  clamp: 0
+  minClamp: -35
+  maxClamp: 35
+  targetAxis: 1
+  delta: {fileID: 11400000, guid: de54307718c1cd64ab31582c68d77426, type: 2}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9964b12cbe579b4cb0c53456718dd6d, type: 3}
+  m_Name: Healing
+  m_EditorClassIdentifier: 
+  ui_name: 
+  icon: {fileID: 0}
+  spellAction: {fileID: 11400000, guid: da2d367d2bafe3d45b25b173b3c697a6, type: 2}
+  spellParticle: {fileID: 1115336489556364, guid: c4b65a51f097b0b49ad2ba258ce9f582,
+    type: 2}
+  spellProjectile: {fileID: 0}

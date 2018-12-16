@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f323750228be88a44a3e7c78889558ea, type: 3}
+  m_Name: e_pants
+  m_EditorClassIdentifier: 
+  type: 1
+  ui_info:
+    itemName: 
+    itemDescription: 
+    skillDescription: 
+    icon: {fileID: 0}
+  armorType: 1
+  armorMesh: {fileID: 4300002, guid: ca6d9766d56cac54c8a58084ae71609b, type: 3}
+  materials:
+  - {fileID: 2100000, guid: e9b48528c48d72944812438f6a9c71d0, type: 2}
+  baseBodyEnabled: 0

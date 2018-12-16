@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fd553884f471344d885a45a976715b9, type: 3}
+  m_Name: th_attack_2
+  m_EditorClassIdentifier: 
+  targetState: {fileID: 11400000, guid: ffd676a57bce2b8428e9fd3efee19e94, type: 2}
+  itemLogic: {fileID: 11400000, guid: 7efc47d56402f3c4c95f68516755bc6d, type: 2}
+  targetAnim: th_attack_2

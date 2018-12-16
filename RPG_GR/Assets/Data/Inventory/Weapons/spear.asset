@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19c6a3f07e020e44fbe8bb7bc1991231, type: 3}
+  m_Name: spear
+  m_EditorClassIdentifier: 
+  ui_info:
+    itemName: 
+    itemDescription: 
+    skillDescription: 
+    icon: {fileID: 21300000, guid: f3d89c8742cfc5941ad491097a071633, type: 3}
+  oh_idle: {fileID: 0}
+  th_idle: {fileID: 0}
+  modelPrefab: {fileID: 100050, guid: 83b5ea384468b4546875e44ec4bb42c9, type: 3}
+  actions:
+  - input: 0
+    action:
+      actionType: 0
+      action_obj: {fileID: 11400000, guid: 055316f57983a224f84860cc38497e9e, type: 2}
+  - input: 0
+    action:
+      actionType: 0
+      action_obj: {fileID: 11400000, guid: bc2bf0543e3a7914390f43065b16ddef, type: 2}
+  lh_position: {fileID: 0}
