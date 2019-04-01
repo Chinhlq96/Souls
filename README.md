@@ -1,2 +1,2 @@
 # Souls
-![ScreenShot](https://ibb.co/RCX6sLW)
+![ScreenShot](https://i.ibb.co/p3HKMCp/point.jpg)
