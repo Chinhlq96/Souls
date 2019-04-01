@@ -38,8 +38,9 @@ namespace SA
             
             if (string.IsNullOrEmpty(targetId))
                 return null;
-
+            Debug.Log(targetId + "targetId");
             Item defaultItem = GetItem(targetId);
+            
             Item newItem = Instantiate(defaultItem);
             newItem.name = defaultItem.name;
             return newItem;

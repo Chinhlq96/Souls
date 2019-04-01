@@ -10,7 +10,7 @@ namespace SA
         public string profileName;
 
         public string[] rightHandWeapons;
-        public string[] LeftHandSlots;
+        public string[] leftHandSlots;
         public string[] spellId;
 
         public List<string> allItemsWeHave = new List<string>();
@@ -18,6 +18,13 @@ namespace SA
         public string[] wearedClothItems;
 
         public StatsHolder[] allStats;
+
+        [System.NonSerialized]
+        public Item[] rightHandWeaponItems;
+        [System.NonSerialized]
+        public Item[] leftHandWeaponItems;
+        [System.NonSerialized]
+        public List<ClothItem> clothItems = new List<ClothItem>();
 
         public void SetStatsToStaringValue()
         {

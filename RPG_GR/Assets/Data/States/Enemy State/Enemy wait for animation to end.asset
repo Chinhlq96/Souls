@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Name: Enemy wait for animation to end
   m_EditorClassIdentifier: 
   onFixed: []
-  onUpdate: []
-  onEnter: []
+  onUpdate:
+  - {fileID: 11400000, guid: 05a65aac7aeed3c4fadb2b8486b67474, type: 2}
+  - {fileID: 11400000, guid: 3f12923e8266dca4f8f9a93e01577714, type: 2}
+  onEnter:
+  - {fileID: 11400000, guid: 97e30388cab237a4cb7d7c5bcefdd34c, type: 2}
   onExit:
   - {fileID: 11400000, guid: 8ea6fbaacf5180e48915b9c1bd7fa4c2, type: 2}
   idCount: 1

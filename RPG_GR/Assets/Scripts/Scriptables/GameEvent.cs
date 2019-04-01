@@ -23,7 +23,6 @@ namespace SA
 
         public void Raise()
         {
-            Debug.Log(listeners.Count);
             for (int i = 0; i < listeners.Count; i++)
             {
                 listeners[i].Raise();

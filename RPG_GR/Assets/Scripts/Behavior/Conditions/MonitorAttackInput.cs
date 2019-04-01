@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SA
 {
-    [CreateAssetMenu(menuName ="Conditions/MonitorAttackInput")]
+    [CreateAssetMenu(menuName ="Actions/State Actions/MonitorAttackInput")]
     public class MonitorAttackInput : StateActions
     {
 

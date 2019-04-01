@@ -9,17 +9,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e09f12a9b8fb5e44eb81fa499afbecc4, type: 3}
-  m_Name: Idle Enemy
+  m_Name: Enemy Idle
   m_EditorClassIdentifier: 
   onFixed: []
-  onUpdate: []
+  onUpdate:
+  - {fileID: 11400000, guid: 3e5f47672ea3d544291bb8591b7b9b15, type: 2}
+  - {fileID: 11400000, guid: edb22f0e30be5fd419d4b592c7537972, type: 2}
+  - {fileID: 11400000, guid: 80497aa7b21bfaf48b35fb63d76c209f, type: 2}
   onEnter:
   - {fileID: 11400000, guid: 429b4980423a032448c58bcf2502d76e, type: 2}
   onExit:
   - {fileID: 11400000, guid: 429b4980423a032448c58bcf2502d76e, type: 2}
-  idCount: 1
+  idCount: 3
   transitions:
   - id: 0
     condition: {fileID: 11400000, guid: e3ae842dca6ff154a9af2a9b8a1d0f3d, type: 2}
     targetState: {fileID: 11400000, guid: 43f1264fcaf1dca4695272cd5a43a29e, type: 2}
+    disable: 0
+  - id: 1
+    condition: {fileID: 11400000, guid: b63a22ded9329bf43b2140de8a80d1e9, type: 2}
+    targetState: {fileID: 11400000, guid: eedf83ce6eb1db14f8f7972d05fcc2a2, type: 2}
     disable: 0

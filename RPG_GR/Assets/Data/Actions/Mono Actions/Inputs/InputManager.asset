@@ -21,8 +21,13 @@ MonoBehaviour:
   LT: {fileID: 11400000, guid: 8731924b89b0bfd42a3aa9c3bcf7f8b2, type: 2}
   Lockon: {fileID: 11400000, guid: 35b934cb8c839ab40a33689b45aa6f50, type: 2}
   y_Input: {fileID: 11400000, guid: 1c9430bb42ba6e74aa930245633642ed, type: 2}
+  inventoryPrompt: {fileID: 11400000, guid: 55c6cd68e16885d4e8621d83f814a4f1, type: 2}
+  onInventory: {fileID: 11400000, guid: 00d89a3331d1c054fa9eb73444bc4224, type: 2}
+  onGame: {fileID: 11400000, guid: fd70042cfd8c43b4381ca34d7ab83a95, type: 2}
+  isInMenu: 0
   b_Input: {fileID: 11400000, guid: 53b9bfacfd8b4574e86c3fa6fa8c06f4, type: 2}
   moveAmount: 0
   rotateDirection: {x: 0, y: 0, z: 0}
   cameraTransform: {fileID: 11400000, guid: 8662383782278be418a0f7a75267643a, type: 2}
   playerStates: {fileID: 11400000, guid: e12ac7c6154aed945b5ecc80d9d6fc66, type: 2}
+  inventoryMonitor: {fileID: 11400000, guid: 7bbc30d45a45a604ea0636f2fc4a5832, type: 2}

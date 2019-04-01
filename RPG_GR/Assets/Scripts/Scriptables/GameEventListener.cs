@@ -10,7 +10,6 @@ namespace SA
 
         void OnEnable()
         {
-            Debug.Log("on");
             targetEvent.Register(this);
         }
 

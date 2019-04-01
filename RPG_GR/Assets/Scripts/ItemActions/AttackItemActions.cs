@@ -9,12 +9,17 @@ namespace SA
     {
         public string targetAnim;
 
+        public ItemActions assignCombo;
+
         public override void Execute(StateManager states)
         {
             states.PlayAnimation(targetAnim);
             states.currentState = targetState;
 
-            
+            if(assignCombo != null)
+            {
+                states.comboAction = assignCombo;
+            }
         }
 
         public override void OnHit(StateManager owner, StateManager defender)

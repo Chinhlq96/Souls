@@ -14,3 +14,4 @@ MonoBehaviour:
   targetState: {fileID: 11400000, guid: ffd676a57bce2b8428e9fd3efee19e94, type: 2}
   itemLogic: {fileID: 11400000, guid: 7efc47d56402f3c4c95f68516755bc6d, type: 2}
   targetAnim: oh_attack_1
+  assignCombo: {fileID: 11400000, guid: 9fccb183d7eb30a438e4571a468e923e, type: 2}

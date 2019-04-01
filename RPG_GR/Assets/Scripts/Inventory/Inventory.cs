@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace SA
 {
@@ -20,6 +21,8 @@ namespace SA
          int l_index = -1;
         public Weapon[] rightHandSlots = new Weapon[2];
         public Weapon[] leftHandSlots = new Weapon[2];
+        //4 or 1 ?
+        public List<ClothItem> cloths = new List<ClothItem>();
 
         private Weapon _rightHandWeapon;
         public Weapon rightHandWeapon

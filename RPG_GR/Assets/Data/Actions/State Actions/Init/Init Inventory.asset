@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Init Inventory
   m_EditorClassIdentifier: 
   changeWeaponAction: {fileID: 11400000, guid: dd4c3854472ce924b8cabf66f6635f08, type: 2}
+  onGame: {fileID: 11400000, guid: fd70042cfd8c43b4381ca34d7ab83a95, type: 2}

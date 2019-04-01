@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0473120a30fac4fb2d71598eb4bfac, type: 3}
+  m_Name: Player Inventory
+  m_EditorClassIdentifier: 
+  playerStates: {fileID: 11400000, guid: e12ac7c6154aed945b5ecc80d9d6fc66, type: 2}
+  weaponItems: {fileID: 11400000, guid: e45afc5b510cfcb4da564e6712489ff2, type: 2}
+  clothItems: {fileID: 11400000, guid: 34f6d5b4f3ba2564686ec8751d949e97, type: 2}
+  playerProfile: {fileID: 11400000, guid: 88637145030308a45ad846d257b1262d, type: 2}

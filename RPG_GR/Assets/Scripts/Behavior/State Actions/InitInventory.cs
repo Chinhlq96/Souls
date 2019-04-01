@@ -9,12 +9,16 @@ namespace SA
     public class InitInventory : StateActions
     {
         public ChangeWeapon changeWeaponAction;
+        public GameEvent onGame;
+
         public override void Execute(StateManager states)
         {
+            onGame.Raise();
             if (states.profile == null)
                 return;
-
+            states.itemsDirty = true;   
             states.isPlayer = true;
+            if(states.playerStatsManager ==null)
             states.playerStatsManager = Resources.Load("Player Stats") as PlayerStatsManager;
             states.profile.SetStatsToStaringValue();
             ResourcesManager rm = GameManager.GetResourcesManager();
@@ -30,17 +34,19 @@ namespace SA
                     if (i > states.inventory.rightHandSlots.Length - 1)
                         break;
                     Weapon rhWeapon = (Weapon)rh;
+                   
                     states.inventory.rightHandSlots[i] = rhWeapon;
                     changeWeaponAction.Execute(states, false);
                 }
             }
             //Get item on right hand according to profile
 
-            for (int i =0;i< states.profile.LeftHandSlots.Length; i++)
+            Debug.Log("LEFT HAND");
+            for (int i =0;i< states.profile.leftHandSlots.Length; i++)
             {
 
                 //Get item on left hand according to profile
-                Item lh = rm.GetItemInstance(states.profile.LeftHandSlots[i]);
+                Item lh = rm.GetItemInstance(states.profile.leftHandSlots[i]);
                 if (lh != null)
                 {
                     Weapon lhWeapon = (Weapon)lh;
@@ -54,6 +60,7 @@ namespace SA
 
             for (int i = 0; i < states.profile.spellId.Length; i++)
             {
+                
                 Item spell = rm.GetItemInstance(states.profile.spellId[i]);
                 if (spell != null)
                 {
@@ -68,8 +75,11 @@ namespace SA
            
             for (int i = 0; i < states.profile.wearedClothItems.Length; i++)
             {
-                
-                states.SetWearedCloth(states.profile.wearedClothItems[i],rm,states);
+                ClothItem item = states.SetWearedCloth(states.profile.wearedClothItems[i], rm, states);
+                if(item != null)
+                {
+                    states.inventory.cloths.Add(item);
+                }
             }
         }
 

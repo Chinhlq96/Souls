@@ -19,9 +19,9 @@ MonoBehaviour:
   modelPrefab: {fileID: 1120004686886896, guid: c504f383b9b05c948ade84b935fbf6de,
     type: 2}
   rb_Action: {fileID: 11400000, guid: 6478a1ef799f3bc48a334b5be1bb9829, type: 2}
-  rt_Action: {fileID: 11400000, guid: 9fccb183d7eb30a438e4571a468e923e, type: 2}
-  lb_Action: {fileID: 11400000, guid: f3f0ff3427eaf5c41acd954c613259bf, type: 2}
-  lt_Action: {fileID: 11400000, guid: b8299c687d97ad2418b41653d0ee0f42, type: 2}
+  rt_Action: {fileID: 11400000, guid: 6478a1ef799f3bc48a334b5be1bb9829, type: 2}
+  lb_Action: {fileID: 11400000, guid: 6478a1ef799f3bc48a334b5be1bb9829, type: 2}
+  lt_Action: {fileID: 11400000, guid: 9fccb183d7eb30a438e4571a468e923e, type: 2}
   th_rb_Action: {fileID: 11400000, guid: a89cc1320ec48ab4d87bd61a9bd56617, type: 2}
   th_rt_Action: {fileID: 11400000, guid: e798edfd0a967ab438a6d5ba6fea5eb0, type: 2}
   th_lb_Action: {fileID: 11400000, guid: a67137966766f10429d04f9c0fdbec5c, type: 2}

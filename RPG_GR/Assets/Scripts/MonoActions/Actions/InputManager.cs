@@ -18,6 +18,12 @@ namespace SA
         public InputButton LT;
         public InputButton Lockon;
         public InputButton y_Input;
+        public InputButton inventoryPrompt;
+
+        public GameEvent onInventory;
+        public GameEvent onGame;
+
+        public bool isInMenu;
 
         public InputButton b_Input;
 
@@ -27,6 +33,10 @@ namespace SA
         public TransformVariable cameraTransform;
 
         public StatesManagerVariable playerStates;
+
+        public PlayerInventory inventoryMonitor;
+
+        public UI_InventoryManager inventoryManager;
 
         public override void Execute()
         {
@@ -41,6 +51,26 @@ namespace SA
             b_Input.Execute();
             Lockon.Execute();
             y_Input.Execute();
+            inventoryPrompt.Execute();
+
+            bool leftArrow;
+            bool rightArrow;
+            bool upArrow;
+            bool downArrow;
+
+            if(inventoryPrompt.isPressed)
+            {
+                if(isInMenu)
+                {
+                    isInMenu = false;
+                    onGame.Raise();
+                }
+                else
+                {
+                    isInMenu = true;
+                    onInventory.Raise();
+                }
+            }
             
 
             moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal.value) + Math.Abs(vertical.value));
@@ -56,17 +86,30 @@ namespace SA
             playerStates.value.vertical = vertical.value;
             playerStates.value.moveAmount = moveAmount;
             playerStates.value.rotateDirection = rotateDirection;
-            playerStates.value.rb = RB.isPressed;
-            playerStates.value.rt = RT.isPressed;
-            playerStates.value.lb = LB.isPressed;
-            playerStates.value.lt = LT.isPressed;
 
-            if (y_Input.isPressed)
+            if (!isInMenu)
             {
-                playerStates.value.isTwoHanded = !playerStates.value.isTwoHanded;
-                playerStates.value.inventory.TwoHanded(playerStates.value.anim, playerStates.value.isTwoHanded);
-               
+                playerStates.value.rb = RB.isPressed;
+                playerStates.value.rt = RT.isPressed;
+                playerStates.value.lb = LB.isPressed;
+                playerStates.value.lt = LT.isPressed;
+
+                if (y_Input.isPressed)
+                {
+                    playerStates.value.isTwoHanded = !playerStates.value.isTwoHanded;
+                    playerStates.value.inventory.TwoHanded(playerStates.value.anim, playerStates.value.isTwoHanded);
+
+                }
             }
+            else
+            {
+
+            }
+
+            inventoryMonitor.Execute(playerStates.value);
         }
+
+
+
     }
 }

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui_name: 
   icon: {fileID: 0}
-  spellAction: {fileID: 11400000, guid: da2d367d2bafe3d45b25b173b3c697a6, type: 2}
-  spellParticle: {fileID: 1115336489556364, guid: c4b65a51f097b0b49ad2ba258ce9f582,
+  spellAction: {fileID: 11400000, guid: 01f5c08c781a31640bc643603047d26e, type: 2}
+  spellParticle: {fileID: 1819081214966656, guid: 73a3cbc1ac4c3e646b5ae88fe9b9e079,
     type: 2}
-  spellProjectile: {fileID: 0}
+  spellProjectile: {fileID: 1146990349792614, guid: 8d6df5a9bccce5245b6a4c90aad71954,
+    type: 2}

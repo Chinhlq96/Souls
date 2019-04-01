@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b379e120410c5994abb81fc4ce073bfa, type: 3}
+  m_Name: Attack 2
+  m_EditorClassIdentifier: 
+  scoreCalculation: {fileID: 11400000, guid: 9673331515ad18f49a85fd5ed7303c0e, type: 2}
+  onEnter: {fileID: 0}
+  onExit: {fileID: 0}
+  animationName: th_attack_3

@@ -15,16 +15,13 @@ MonoBehaviour:
   rightHandWeapons:
   - Axe
   - Blade
-  - Unarmed
-  LeftHandSlots:
   - Blade
-  - Blade
-  - Blade
+  leftHandSlots: []
   spellId:
   - Healing
   allItemsWeHave: []
   wearedClothItems:
-  - Body 1
+  - Body 2
   allStats:
   - startingValue: 100
     targetStat: {fileID: 11400000, guid: ccf2fb3435e19e346b45dbaa6cbf48b5, type: 2}

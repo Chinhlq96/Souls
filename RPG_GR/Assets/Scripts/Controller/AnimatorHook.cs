@@ -11,7 +11,9 @@ namespace SA
 
         public void Init(StateManager st)
         {
+            Debug.Log("st :" + st );
             states = st;
+            Debug.Log("states :" + states );
             anim = states.anim;
         }
 
@@ -39,6 +41,11 @@ namespace SA
                 Debug.Log(states);
                 states.canRotate = false;
             }
+            else
+            {
+                Debug.Log(states);
+                states.isComboAvailable = true;
+            }
             states.SetDamageColliderStatus(v);
             states.damageCollidersAreOpen = v;
         }
@@ -61,6 +68,18 @@ namespace SA
             states.isParrying = (value==1);
         }
 
+        public void SetComboStatus(int value)
+        {
+            if (value ==1)
+            {
+                states.isComboAvailable = true;
+            }
+            else
+            {
+                states.isComboAvailable = false;
+                states.comboAction = null;
+            }
+        }
         
     }
 }

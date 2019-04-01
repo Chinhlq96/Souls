@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b124debc63cfed54d940544d98be8a77, type: 3}
-  m_Name: Player Stats Manager
+  m_Name: Player Stats
   m_EditorClassIdentifier: 
   health: {fileID: 11400000, guid: ccf2fb3435e19e346b45dbaa6cbf48b5, type: 2}
   stamina: {fileID: 11400000, guid: b83ecc7783127b74c96146006d6e3a49, type: 2}

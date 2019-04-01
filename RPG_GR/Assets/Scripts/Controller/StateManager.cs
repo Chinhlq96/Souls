@@ -58,11 +58,15 @@ namespace SA
         //allow us to create new state action
         public bool isParrying;
         public bool isStunned;
+        public bool isComboAvailable;
+        public ItemActions comboAction;
         public bool damageCollidersAreOpen;
         public bool forceEndActions;
         public bool canRotate;
         public bool dontInterrupt;
+        public bool itemsDirty;
 
+        public AI.AIManager aiManager;
         public EnemyStatsManager enStatManager;
         public PlayerStatsManager playerStatsManager;
 
@@ -79,6 +83,10 @@ namespace SA
             rb,rt,lb,lt
         }
 
+        void Awake()
+        {
+            mTransform = this.transform;
+        }
 
         private void Start()
         {
@@ -214,11 +222,24 @@ namespace SA
 
         public void SetDamageColliderStatus(bool status)
         {
-            bool mirror = anim.GetBool("mirror");
-            if (!mirror)
-                inventory.rightHandWeapon.runtime.weaponHook.SetColliderStatus(status);
+            if (isPlayer)
+            {
+                bool mirror = anim.GetBool("mirror");
+                if (!mirror)
+                {
+                    if (inventory.rightHandWeapon != null)
+                        inventory.rightHandWeapon.runtime.weaponHook.SetColliderStatus(status);
+                }
+                else
+                {
+                    if (inventory.leftHandWeapon != null)
+                        inventory.leftHandWeapon.runtime.weaponHook.SetColliderStatus(status);
+                }
+            }
             else
-                inventory.leftHandWeapon.runtime.weaponHook.SetColliderStatus(status);
+            {
+                aiManager.weaponHook.SetColliderStatus(status);
+            }
         }
 
         //change logic by change state action
@@ -292,7 +313,7 @@ namespace SA
             w.runtime.modelInstance.SetActive(true);
         }
 
-        public void SetWearedCloth(string id, ResourcesManager rm, StateManager states)
+        public ClothItem SetWearedCloth(string id, ResourcesManager rm, StateManager states)
         {
 
             Item item = rm.GetItemInstance(id);
@@ -300,19 +321,28 @@ namespace SA
             {
                 ClothItem c = (ClothItem)item;
                 states.character.WearCloth(c);
+                return c;
             }
+            return null;
         }
 
         public void OnHit(StateManager hitter)
         {
-            ItemActions a = hitter.inventory.currentItemAction;
-            if(a == null)
+            if (isPlayer)
             {
-                Debug.Log("Current item action is null");
-                return;
+                playerStatsManager.health.variable.Add(-hitter.aiManager.currentDamageOutput);
             }
+            else
+            {
+                ItemActions a = hitter.inventory.currentItemAction;
+                if (a == null)
+                {
+                    Debug.Log("Current item action is null");
+                    return;
+                }
 
-            a.OnHit(hitter, this);
+                a.OnHit(hitter, this);
+            }
             //TODO damage calc
         }
         #endregion
